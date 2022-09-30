@@ -10,6 +10,7 @@
             <div class="col-lg-6">
                 <h2>Edit product</h2>
                 {{ form_start(form) }}
+
                     <div class="form-control">
                         <i class="fa fa-calendar"></i> {{ form_label(form.title) }}
                         {{ form_widget(form.title) }}
@@ -20,6 +21,10 @@
                             {{ form_errors(form.title) }}
                         </div>
                     </div>
+
+                    {{ form_row(form.price) }}
+                    {{ form_row(form.quantity) }}
+
                     <input type="submit" value="Send">
                 {{ form_end(form) }}
             </div>

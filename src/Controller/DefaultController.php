@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Entity\Product;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 // use Symfony\Component\BrowserKit\Request;
 use Symfony\Component\HttpFoundation\Request;
@@ -52,6 +54,8 @@ class DefaultController extends AbstractController
         }
         $form = $this->createFormBuilder($product)
             ->add('title', TextType::class)
+            ->add('price', NumberType::class)
+            ->add('quantity', IntegerType::class)
             ->getForm();
 
         // dump($product->getTitle());
