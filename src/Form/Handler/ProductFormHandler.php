@@ -5,7 +5,6 @@ namespace App\Form\Handler;
 use App\Entity\Product;
 use App\Utils\File\FileSaver;
 use App\Utils\Manager\ProductManager;
-use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Form\Form;
 
 class ProductFormHandler
