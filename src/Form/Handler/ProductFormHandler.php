@@ -56,7 +56,7 @@ class ProductFormHandler
         
         // $this->entityManager->flush();
         $this->productManager->save($product);
-        dd($product);
+        // dd($product);
         return $product;
     }
 }
